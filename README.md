@@ -52,4 +52,5 @@ This project was created as a web development practice project.
 -`style.css` -Website styling
 
 -`script.hs` -JavaScript functionality
+
 -`screenshot.png` -Project preview
