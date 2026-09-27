@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+
+<aside class="sidebar">
+    <h2>Student Dashboard</h2>
+    <nav>
+    <a href="#dashboardSection" class="active">Dashboard</a>
+    <a href="#studentsSection">Students</a>
+    <a href="#settingsSection">Setting</a>
+    </nav>
+</aside>
+
+<main class="mainContent">
+
+<header>
+ <div>
+ <h1>Dashboard</h1>
+ <p>Welcome to Student Management System</p>
+ </div>
+ <button id="darkModBtn">🌙</button>
+</header>
+
+<section class="stats" id="dashboardSection">
+    <div class="stat-card">
+        <h3>Total Students</h3> 
+        <p id="totalStudents">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Active Students</h3>
+        <p id="activeStudents">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Departments</h3>
+        <p id="totalDepartments">0</p>
+    </div>
+</section>
+
+   <section class="students-section" id="studentsSection">
+    <input type="text" id="searchInput" placeholder="Search Student...">
+    <select id="yearFilter">
+        <option value="all">All Years</option>
+        <option value="1">Year 1</option>
+        <option value="2">Year 2</option>
+        <option value="3">Year 3</option>
+        <option value="4">Year 4</option>
+        
+    </select>
+
+    <div class="section-header">
+        <h2>Students</h2>
+        <button id="showFormBtn">Add Student</button>
+    </div>
+
+    <div class="student-form" id="studentForm">
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="text" id="studentMajor" placeholder="Major">
+        <input type="number" id="studentYear" placeholder="Year">
+        <select id="studentStatus">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+        <button id="addStudentBtn">Add Student</button>
+        <button id="cancelStudentBtn" type="button">Cancel</button>
+        <button id="updateStudentBtn" style="display:none;">Update Student</button>
+    </div>
+
+    <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Major</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <p id="noStudentsMessage">No students found.</p>
+    </table>
+    </div>
+   </section>
+
+   <section class="settings-section" id="settingsSection">
+    <h2>Settings</h2>
+    <p>Manage your dashboard settings here.</p>
+   </section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
