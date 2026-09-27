@@ -1,5 +1,6 @@
 # Student Management Dashboard
 A web application for managing student information.
+This project was created as a web development practice project.
 
 ## Features
 -Add new students
