@@ -54,3 +54,8 @@ This project was created as a web development practice project.
 -`script.hs` -JavaScript functionality
 
 -`screenshot.png` -Project preview
+
+
+### API Product Search
+
+A JavaScript project that uses a REST API to search and display products.

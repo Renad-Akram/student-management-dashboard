@@ -208,7 +208,9 @@ let sidebarLinks=document.querySelectorAll('.sidebar a');
 sidebarLinks.forEach(function(link){
     link.onclick=function()
     {sidebarLinks.forEach(function(item){item.classList.remove('active')});
-link.classList.add('active');};});
+link.classList.add('active');
+};
+});
 
 function validateStudent(name,major,year)
 { if(name.trim() === "" || major.trim() === "" || year === "") {
